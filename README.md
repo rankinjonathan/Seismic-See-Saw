@@ -29,6 +29,8 @@ node -v
 
 ## Downloading the code onto the Raspberry Pi
 
+In a terminal window type the following commands
+
 1. Clone the repo ```(`git clone https://github.com/rankinjonathan/Seismic-See-Saw`)```
 2. ```cd Raspberry Pi code for Seismic See Saw```
 3. ```npm install```
