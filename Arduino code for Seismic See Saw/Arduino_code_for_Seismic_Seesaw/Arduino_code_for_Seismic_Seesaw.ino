@@ -26,10 +26,10 @@ int happened3 = 0;
 int happened4 = 0;
 
 
-unsigned long previousMillis;
-unsigned long timer = 60000;
+unsigned long previousMillis;   //you need to use the long command because of the length of the number you are using
+unsigned long timer = 60000;    //How long do you want your contract to last for in milliseconds
 unsigned long difference;
-unsigned long pressTime1;
+unsigned long pressTime1;       //Record the start time of each contract
 unsigned long wait1;
 unsigned long pressTime2;
 unsigned long wait2;
@@ -57,6 +57,8 @@ void setup() {
   //reserve 10 bytes of the information string
   inputString.reserve(10);
   
+ //Initialise the servo 
+  
       myservo.attach(10);  // attaches the servo on pin 10 to the servo object
     myservo.write(0);
     delay(1000);
@@ -68,6 +70,8 @@ void setup() {
     delay(1000);
     myservo.detach();
 
+  
+  //start the timer 
 previousMillis = 0;
 Serial.print("Start time = ");
 Serial.println(previousMillis);
@@ -82,7 +86,7 @@ void loop() {
     
 if(difference > timer){
 
-   lastSerialVal = currentSerialVal;
+   lastSerialVal = currentSerialVal;  //Check to see if the current value sent over the serial is the same as the previous value
    
     Serial.println("Data not recieved in last 5 min - therefore no earthquake");
 
