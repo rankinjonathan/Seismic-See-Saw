@@ -1,9 +1,6 @@
-Instructions for setting up eduroam on a Raspberry Pi
+# Instructions for connecting to Eduroam
 
-Open up terminal
-
-'sudo nano /boot/cmdline.txt'
-
-add with a leading space
-'net.ifnames=0'
-
+Open a terminal window and type in 
+'''
+sudo nano /boot/cmdline.txt
+'''
