@@ -1,0 +1,10 @@
+local_resinos:
+  app-name: earthquake-converter
+  build-triggers:
+    - Dockerfile: d4616144832b75b8173e23d52676de8102c5022106ed74d3c8faf17aa743e1b1
+    - package.json: 7e6cdefbe81825ad1e1848e30281a8e89dc40bb8629bddeb36f43f2f73347783
+  environment: []
+destination: /usr/src/app
+ignore:
+  - .git
+  - node_modules/
