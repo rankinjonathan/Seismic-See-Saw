@@ -1,0 +1,9 @@
+Instructions for setting up eduroam on a Raspberry Pi
+
+Open up terminal
+
+'sudo nano /boot/cmdline.txt'
+
+add with a leading space
+'net.ifnames=0'
+
