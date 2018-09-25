@@ -1,6 +1,6 @@
 # Instructions for connecting to Eduroam
 
 Open a terminal window and type in 
-'''
+```
 sudo nano /boot/cmdline.txt
-'''
+```
