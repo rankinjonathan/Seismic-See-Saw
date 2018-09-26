@@ -46,5 +46,5 @@ And add at the bottom
 @reboot /usr/local/bin/forever start -c yourNodeJSAppStartFile.js 
 ```
 
-This project is adapted from a project by Owen Trueblood, you can find the original project at https://forums.resin.io/t/earthquake-converter/466
+This project is adapted from work by Owen Trueblood, you can find the original project at https://forums.resin.io/t/earthquake-converter/466
 
